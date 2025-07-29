@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Basic app structure -->
+    <!-- TODO: Needs to add the mipmap listed under application tag -->
+    <application
+        android:allowBackup="true"
+        android:label="My App"
+        android:supportsRtl="true"
+       android:theme="@style/Theme.AppCompat.Light">
+       <!-- One specific activity (screen/class) of the app -->
+       <!-- TODO: Needs to add android:theme under activity -->
+        <activity android:name=".App" 
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+<!-- android:label="@string/app_name" -->
+<!-- android:roundIcon="@mipmap/launcher_round" -->
+<!-- android:theme="@style/AppTheme"> -->
+<!-- <activity android:name=".MainActivity">-->
