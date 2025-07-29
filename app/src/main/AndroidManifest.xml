@@ -7,10 +7,10 @@
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true"
-       android:theme="@style/Theme.AppCompat.Light">
+       android:theme="@style/Theme.AppCompat.DayNight">
        <!-- One specific activity (screen/class) of the app -->
        <!-- TODO: Needs to add android:theme under activity -->
-        <activity android:name=".App" 
+        <activity android:name=".App"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
