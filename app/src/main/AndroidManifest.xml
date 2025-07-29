@@ -5,7 +5,7 @@
     <!-- TODO: Needs to add the mipmap listed under application tag -->
     <application
         android:allowBackup="true"
-        android:label="My App"
+        android:label="@string/app_name"
         android:supportsRtl="true"
        android:theme="@style/Theme.AppCompat.Light">
        <!-- One specific activity (screen/class) of the app -->
