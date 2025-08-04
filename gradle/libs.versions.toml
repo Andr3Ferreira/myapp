@@ -3,6 +3,10 @@
 
 [versions]
 guava = "33.4.5-jre"
+fragment = "1.8.8"
+cardview = "1.0.0"
 
 [libraries]
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
+fragment = { group = "androidx.fragment", name = "fragment", version.ref = "fragment" }
+cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
