@@ -7,7 +7,6 @@ import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
@@ -17,7 +16,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 //import org.example.databinding.ActivityMainBinding;
 
-public class App extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
 //    private ActivityMainBinding binding;
 
@@ -59,19 +58,6 @@ public class App extends AppCompatActivity {
         myTextView.setText(spannableString);
         // Important: Enable link movement for the TextView
         myTextView.setMovementMethod(LinkMovementMethod.getInstance());
-        
-        
-//        binding = ActivityMainBinding.inflate(getLayoutInflater());
-//        View view = binding.getRoot();
-//        setContentView(view);
 
     }
-
-    // public String getGreeting() {
-    // return "Hello World!";
-    // }
-
-    // public static void main(String[] args) {
-    // System.out.println(new App().getGreeting());
-    // }
 }

@@ -9,7 +9,7 @@ package org.example;
 public class AppTest {
     /*
      * @Test public void appHasAGreeting() {
-     * App classUnderTest = new App();
+     * LoginActivity classUnderTest = new LoginActivity();
      * assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
      * }
      */
