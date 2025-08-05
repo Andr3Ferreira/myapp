@@ -7,8 +7,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.widget.TextView;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+//import org.example.databinding.ActivityMainBinding;
 
 public class App extends AppCompatActivity {
+
+//    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,10 @@ public class App extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
+
+//        binding = ActivityMainBinding.inflate(getLayoutInflater());
+//        View view = binding.getRoot();
+//        setContentView(view);
 
     }
 
