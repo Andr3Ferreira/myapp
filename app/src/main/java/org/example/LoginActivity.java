@@ -1,5 +1,6 @@
 package org.example;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -28,13 +29,25 @@ public class LoginActivity extends AppCompatActivity {
         RelativeLayout loginBox = new RelativeLayout(this);
         Button btn = new Button(this);
 
-        setContentView(R.layout.app_main);
+        setContentView(R.layout.app_login);
 
         // Hides Title Bar at the top of activity. Must be placed in every activity.
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
 
+        // Sign in button
+        Button signInBtn = findViewById(R.id.login_button);
+        signInBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Sending user to DietActivity after clicking "Sign in" button.
+                Intent intent = new Intent(LoginActivity.this, DietActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Sign up link
         TextView myTextView = findViewById(R.id.signup_view);
         String fullText = "Don't have an account yet? Sign up.";
         SpannableString spannableString = new SpannableString(fullText);

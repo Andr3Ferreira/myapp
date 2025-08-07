@@ -1,20 +1,32 @@
 package org.example;
 
+import android.app.Activity;
+import android.os.Bundle;
+
 /**
  *  Activity to create diets and show the user the nutritional values.
  */
-public class DietActivity {
+public class DietActivity  extends Activity {
 
-    // Ask user to input current weight
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-    // Ask user to input target weight. If different from current weight, calculate calories needed.
+        // Links java class with XML UI design
+        setContentView(R.layout.app_diet);
 
-    // Ask user to input age
+        // TODO: Ask user to input current weight
 
-    // Ask user to input gender
+        // TODO: Ask user to input target weight. If different from current weight, calculate calories needed.
 
-    // Ask user to input activity level
+        // TODO: Ask user to input age
 
-    // Ask user to input current diet
+        // TODO: Ask user to input gender
+
+        // TODO: Ask user to input activity level
+
+        // TODO: Ask user to input current diet
+
+    }
 
 }
